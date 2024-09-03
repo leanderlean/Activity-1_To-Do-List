@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel = "stylesheet" href="todo.css">
+    
+</head>
+<body>
+
+    <header>
+        <h1>To-Do List</h1>
+            <form id = "tasks_form">
+                <input
+                type = "text"
+                id = "tasks_input"
+                placeholder="Please add your tasks.">
+
+                <input type="submit"
+                id = "add_task_submit"
+                value = "Add Task">
+            </form>
+    </header>
+
+    <main>
+        <section class = "tasks_list">
+            <h2>MY TASKS</h2>
+
+            <div id = "tasks">
+
+                <!-- <div class = "task">
+                    <div class = "content">
+                        <input 
+                        type = "text"
+                        class = "text"
+                        value = "MY TASKS"
+                        readonly>
+                    </div>
+
+                    <div class = "actions">
+                        <input type = "checkbox" class = "checkBox" id = "checkBoxID">
+                        <button class = "delete">Delete</button>
+                    </div>
+                </div> -->
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src = "todo.js"></script>
+</body>
+</html>
