@@ -5,30 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
     <link rel = "stylesheet" href="todo.css">
-    
+    </style>
 </head>
 <body>
 
     <header>
         <h1>To-Do List</h1>
-            <form id = "tasks_form">
+            <form id="tasks_form">
                 <input
-                type = "text"
-                id = "tasks_input"
-                placeholder="Please add your tasks.">
-
-                <input type="submit"
-                id = "add_task_submit"
-                value = "Add Task">
+                    type="text"
+                    id="tasks_input"
+                    placeholder="Please add your tasks.">
+    
+                <input
+                    type="date"
+                    id="deadline_input"
+                    placeholder="Set a deadline">
+    
+                <input
+                    type="submit"
+                    id="add_task_submit"
+                    value="Add Task">
             </form>
+
+            <select id="sort_dropdown">
+                <option value="date_added">Sort by Date Added</option>
+                <option value="deadline">Sort by Deadline</option>
+            </select>
+
     </header>
+
 
     <main>
         <section class = "tasks_list">
             <h2>MY TASKS</h2>
 
             <div id = "tasks">
-
+            
                 <!-- <div class = "task">
                     <div class = "content">
                         <input 
@@ -46,9 +59,10 @@
 
             </div>
         </section>
-
     </main>
 
-    <script src = "todo.js"></script>
+    <script src = "todo.js">
+
+    </script>
 </body>
 </html>
